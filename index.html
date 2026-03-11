@@ -34,6 +34,25 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .download-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .download-btn:hover {
+    background-color: #0056b3;
+     color: #fff;
+  }
+  .ellipsis-text {
+  white-space: normal !important;   /* allows wrapping */
+  word-break: break-word !important; /* breaks long words if needed */
+
+}
+
+  </style>
 </head>
 
 <body class="index-page">
@@ -42,7 +61,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpeg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -60,32 +79,28 @@
     </div>
 
     <nav id="navmenu" class="navmenu">
+  <ul>
+    <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+    <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+    <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+    <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+    <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+
+    <!-- Dropdown with Companies -->
+    <li class="dropdown">
+      <a href="#"><i class="bi bi-menu-button navicon"></i> <span>Companies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#portfolio" class="portfolio-filter-link ellipsis-text" data-filter=".filter-spacetheory">SpaceTheory Solutions Pvt Ltd</a></li>
+        <li><a href="#portfolio" class="portfolio-filter-link ellipsis-text" data-filter=".filter-woodkraft">Woodkraft India Pvt Ltd</a></li>
+        <li><a href="#portfolio" class="portfolio-filter-link ellipsis-text" data-filter=".filter-brigade">Brigade Enterprises Ltd</a></li>
+        <li><a href="#portfolio" class="portfolio-filter-link ellipsis-text" data-filter=".filter-skd">SKD Interior India Pvt Ltd</a></li>
+        <li><a href="#portfolio" class="portfolio-filter-link ellipsis-text" data-filter=".filter-sharma">Sharma Kalypso Pvt Ltd</a></li>
       </ul>
-    </nav>
+    </li>
+
+    <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+  </ul>
+</nav>
 
   </header>
 
@@ -119,7 +134,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/my-profile-img.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
             <h2>Senior Project Manager – Interior Fit-outs & Commercial Projects.</h2>
@@ -155,119 +170,119 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
+   <!-- Stats Section -->
+<section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+    <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-emoji-smile"></i>
+          <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Happy Clients</strong> <span>Qualcomm, ITC, IREO, Brigade, Technip, Databricks</span></p>
         </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Projects</strong> <span>Commercial, Hospitality, Metro, Residential Interiors</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-headset"></i>
+          <span data-purecounter-start="0" data-purecounter-end="45000" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hours Of Support</strong> <span>12+ years of project execution & client coordination</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-people"></i>
+          <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hard Workers</strong> <span>Cross-functional teams, vendors & site manpower</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+   <!-- Skills Section -->
+<section id="skills" class="skills section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>Technical expertise in project management, SAP workflows, and interior fit-out execution</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>SAP</span> <i class="val">95%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>AutoCAD</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>PROCORE</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
 
       </div>
 
-    </section><!-- /Stats Section -->
+      <div class="col-lg-6">
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+        <div class="progress">
+          <span class="skill"><span>MS Word / Excel / PowerPoint</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
+        </div><!-- End Skills Item -->
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+        <div class="progress">
+          <span class="skill"><span>Project Execution & Vendor Coordination</span> <i class="val">95%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
+        </div><!-- End Skills Item -->
 
-        </div>
+        <div class="progress">
+          <span class="skill"><span>Quality Assurance & Compliance</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
 
       </div>
 
-    </section><!-- /Skills Section -->
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
 
 <!-- Resume Section -->
 <section id="resume" class="resume section">
@@ -276,6 +291,8 @@
   <div class="container section-title" data-aos="fade-up">
     <h2>Resume</h2>
     <p>Experienced Senior Project Manager with 12+ years in high-end interior fit-out projects across commercial, hospitality, and industrial sectors. Proven expertise in SAP workflows, vendor coordination, and quality assurance.</p>
+  <br> <br>
+    <a href="documents/GK_Resume.pdf" target="_blank" download class="download-btn">Download Resume</a>
   </div><!-- End Section Title -->
 
   <div class="container">
@@ -312,6 +329,19 @@
           </ul>
         </div>
 
+        
+  <h4 class="resume-title" >Personnel Profile</h4>
+  <div class="resume-item">
+  <ul>
+    <li>Highly flexible and adaptable performer</li>
+    <li>Capable of working independently and collaboratively to achieve goals</li>
+    <li>Motivated self-starter and hard worker</li>
+    <li>Quick learner with ability to adopt new technologies and techniques</li>
+    <li>Strong organizational and motivational skills</li>
+    <li>Excellent communication skills</li>
+  </ul>
+</div>
+
         <h3 class="resume-title">Languages</h3>
         <div class="resume-item">
           <ul>
@@ -321,222 +351,194 @@
             <li>Telugu</li>
           </ul>
         </div>
+
+         
       </div>
+
+    
 
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
         <h3 class="resume-title">Professional Experience</h3>
 
+       
         <div class="resume-item">
-          <h4>Senior Project Manager</h4>
-          <h5>Dec 2023 – Present</h5>
-          <p><em>SpaceTheory Solutions Pvt Ltd, Bangalore</em></p>
-          <ul>
-            <li>Led execution of interior fit-outs for Technip Hyderabad, Databricks Bangalore, and TEC Chennai.</li>
-            <li>Managed MRN preparation, vendor billing, and client coordination.</li>
-            <li>Chaired weekly progress reviews and ensured quality compliance.</li>
-          </ul>
-        </div>
+  <h4>Senior Project Manager</h4>
+  <h5>Dec 2023 – Dec 2025</h5>
+  <p><em>SpaceTheory Solutions Pvt Ltd, Bangalore</em></p>
+  <ul>
+    <li>Projects: SpaceTheory Workspace (Indira Nagar), Technip (Hyderabad), Officemate Furniture Showroom (Chennai), Databricks Ph-3 (Bangalore), TEC Office Space (Chennai)</li>
+    <li>Responsibilities: Led client coordination, managed procurement (MRN), site manpower, weekly/monthly planning, quality checks, and vendor billing.</li>
+  </ul>
+</div>
 
-        <div class="resume-item">
-          <h4>Project Manager</h4>
-          <h5>Nov 2022 – Nov 2023</h5>
-          <p><em>Woodkraft India Pvt Ltd, Bangalore</em></p>
-          <ul>
-            <li>Delivered Qualcomm Whitefield interiors with timely execution and zero snags.</li>
-            <li>Handled material procurement, manpower allocation, and client approvals.</li>
-          </ul>
-        </div>
+<div class="resume-item">
+  <h4>Project Manager</h4>
+  <h5>Nov 2022 – Nov 2023</h5>
+  <p><em>Woodkraft India Pvt Ltd, Bangalore</em></p>
+  <ul>
+    <li>Project: Qualcomm Whitefield, Bangalore</li>
+    <li>Client: Qualcomm India Pvt Ltd</li>
+    <li>Responsibilities: Managed sample approvals, MRN preparation, manpower allocation, site inspections, and vendor billing.</li>
+  </ul>
+</div>
 
-        <div class="resume-item">
-          <h4>Manager – Interior Projects</h4>
-          <h5>Aug 2018 – July 2022</h5>
-          <p><em>Brigade Enterprises Ltd, Bangalore</em></p>
-          <ul>
-            <li>Executed marketing offices, model flats, clubhouses, and mall renovations.</li>
-            <li>Managed SAP workflows, vendor billing, and audit-ready documentation.</li>
-          </ul>
-        </div>
+<div class="resume-item">
+  <h4>Manager – Interior Projects</h4>
+  <h5>Aug 2018 – July 2022</h5>
+  <p><em>Brigade Enterprises Ltd, Bangalore</em></p>
+  <ul>
+    <li>Projects: Brigade Seven Gardens, Brigade Panorama, Cornerstone Utopia, Citadel Hyderabad, Atmosphere Clubhouse, Orion Mall Food Court, Komarla Heights, Gem Marketing Office, Woods Clubhouse.</li>
+    <li>Responsibilities: Managed SAP workflows, vendor packages, quality inspections, audit-ready documentation, and delivered projects ahead of schedule.</li>
+  </ul>
+</div>
+
+<div class="resume-item">
+  <h4>Project Manager / Quantity Surveyor</h4>
+  <h5>Nov 2017 – Apr 2018</h5>
+  <p><em>SKD Interior India Pvt Ltd, New Delhi</em></p>
+  <ul>
+    <li>Project: IREO Mixed Use Project (Hotel, Commercial Building, Residences)</li>
+    <li>Client: IREO Hospitality Services</li>
+    <li>Responsibilities: Managed finishing works, site inspections, progress reports, client/vendor billing, and reconciliation.</li>
+  </ul>
+</div>
+
+<div class="resume-item">
+  <h4>Deputy Manager – Interiors</h4>
+  <h5>Jan 2017 – Oct 2017</h5>
+  <p><em>Sharma Kalypso Pvt Ltd, Hyderabad</em></p>
+  <ul>
+    <li>Project: ITC Kohinoor 5-Star Hotel</li>
+    <li>Client: ITC Ltd</li>
+    <li>Responsibilities: Oversaw finishing works, vendor billing, site quality checks, planning, snag closure, and project handover documentation.</li>
+  </ul>
+</div>
+
+<div class="resume-item">
+  <h4>Site Engineer / Billing Engineer / Planning Engineer</h4>
+  <h5>Aug 2013 – Jan 2017</h5>
+  <p><em>Sharma Kalypso Pvt Ltd, Bangalore</em></p>
+  <ul>
+    <li>Project: Bangalore Underground Metro Station – Architectural Finishes</li>
+    <li>Client: BMRCL (Bangalore Metro Rail Corporation Limited)</li>
+    <li>Responsibilities: Managed finishing works, material orders, MIR preparation, client meetings, vendor reconciliation, planning, snag closure, and project handover.</li>
+  </ul>
+</div>
 
       </div>
     </div>
   </div>
 </section><!-- /Resume Section -->
-
-
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+   <section id="portfolio" class="portfolio section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Selected interior fit-out projects delivered across commercial, hospitality, metro, and residential sectors.</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+      <!-- Portfolio Filters -->
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All Companies</li>
+        <li data-filter=".filter-spacetheory">SpaceTheory Solutions</li>
+        <li data-filter=".filter-woodkraft">Woodkraft India</li>
+        <li data-filter=".filter-brigade">Brigade Enterprises</li>
+        <li data-filter=".filter-skd">SKD Interior</li>
+        <li data-filter=".filter-sharma">Sharma Kalypso</li>
+      </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <!-- Example Project -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
+          <div class="portfolio-content h-100">
+            <img src="assets\img\spacetheory\s1.jpeg" class="img-fluid" alt="SpaceTheory Workspace">
+            <div class="portfolio-info">
+              <h4>SpaceTheory Workspace – Indira Nagar</h4>
+              <p>Office interiors</p>
+              <a href="assets\img\spacetheory\s1.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
+          <div class="portfolio-content h-100">
+            <img src='assets\img\spacetheory\s2.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
+            <div class="portfolio-info">
+              <h4>SpaceTheory Workspace – Indira Nagar</h4>
+              <p>Office interiors</p>
+              <a href="assets\img\spacetheory\s2.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
+          <div class="portfolio-content h-100">
+            <img src='assets\img\spacetheory\s3.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
+            <div class="portfolio-info">
+              <h4>SpaceTheory Workspace – Indira Nagar</h4>
+              <p>Office interiors</p>
+              <a href="assets\img\spacetheory\s3.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
+          <div class="portfolio-content h-100">
+            <img src='assets\img\spacetheory\s4.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
+            <div class="portfolio-info">
+              <h4>SpaceTheory Workspace – Indira Nagar</h4>
+              <p>Office interiors</p>
+              <a href="assets\img\spacetheory\s4.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
+          <div class="portfolio-content h-100">
+            <img src='assets\img\spacetheory\s5.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
+            <div class="portfolio-info">
+              <h4>SpaceTheory Workspace – Indira Nagar</h4>
+              <p>Office interiors</p>
+              <a href="assets\img\spacetheory\s5.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+          </div>
+          
+        </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hospitality">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/itc-kohinoor.jpg" class="img-fluid" alt="ITC Kohinoor Hotel">
+            <div class="portfolio-info">
+              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
+              <p>5-Star hospitality interiors</p>
+              <a href="assets/img/portfolio/itc-kohinoor.jpg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-metro">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/bangalore-metro.jpg" class="img-fluid" alt="Bangalore Metro Station">
+            <div class="portfolio-info">
+              <h4>Bangalore Underground Metro Station</h4>
+              <p>Architectural finishes</p>
+              <a href="assets/img/portfolio/bangalore-metro.jpg" title="Bangalore Metro" data-gallery="portfolio-gallery-metro" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+      </div><!-- End isotope-container -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+    </div><!-- End isotope-layout -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+  </div><!-- End container -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
+</section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -843,6 +845,185 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Portfolio Filter Script for Dropdown -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const portfolioContainer = document.getElementById('portfolio-container');
+      
+      // Generate SpaceTheory images s1 to s12 using loop
+      const projectTitles = [
+        'SpaceTheory Workspace – Indira Nagar',
+        'Technip Project – Hyderabad',
+        'Officemate Furniture Showroom – Chennai',
+        'Databricks Ph-3 – Bangalore',
+        'TEC Office Space – Chennai',
+        'SpaceTheory Project 6',
+        'SpaceTheory Project 7',
+        'SpaceTheory Project 8',
+        'SpaceTheory Project 9',
+        'SpaceTheory Project 10',
+        'SpaceTheory Project 11',
+        'SpaceTheory Project 12'
+      ];
+      
+      // Loop through s1 to s12
+      for (let i = 1; i <= 12; i++) {
+        const imagePath = `assets/img/spacetheory/s${i}.jpeg`;
+        const portfolioItem = `
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
+            <div class="portfolio-content h-100">
+              <img src="${imagePath}" class="img-fluid" alt="${projectTitles[i-1]}">
+              <div class="portfolio-info">
+                <h4>${projectTitles[i-1]}</h4>
+                <p>Office interiors</p>
+                <a href="${imagePath}" title="${projectTitles[i-1]}" data-gallery="portfolio-gallery-spacetheory" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>`;
+        portfolioContainer.innerHTML += portfolioItem;
+      }
+      
+      // Add other company projects
+      const otherProjects = `
+        <!-- Woodkraft Projects -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-woodkraft">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="Qualcomm Whitefield – Bangalore">
+            <div class="portfolio-info">
+              <h4>Qualcomm Whitefield – Bangalore</h4>
+              <p>Corporate office interiors</p>
+              <a href="assets/img/portfolio/app-1.jpg" title="Qualcomm Whitefield" data-gallery="portfolio-gallery-woodkraft" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brigade Projects -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="Brigade Seven Gardens">
+            <div class="portfolio-info">
+              <h4>Brigade Seven Gardens</h4>
+              <p>Residential interiors</p>
+              <a href="assets/img/portfolio/app-2.jpg" title="Brigade Seven Gardens" data-gallery="portfolio-gallery-brigade" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Brigade Panorama">
+            <div class="portfolio-info">
+              <h4>Brigade Panorama</h4>
+              <p>Residential complex</p>
+              <a href="assets/img/portfolio/app-3.jpg" title="Brigade Panorama" data-gallery="portfolio-gallery-brigade" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="Cornerstone Utopia">
+            <div class="portfolio-info">
+              <h4>Cornerstone Utopia</h4>
+              <p>Commercial complex</p>
+              <a href="assets/img/portfolio/books-1.jpg" title="Cornerstone Utopia" data-gallery="portfolio-gallery-brigade" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKD Interior Projects -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-skd">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="IREO Mixed Use Project – New Delhi">
+            <div class="portfolio-info">
+              <h4>IREO Mixed Use Project – New Delhi</h4>
+              <p>Hotel, Commercial, Residences</p>
+              <a href="assets/img/portfolio/books-2.jpg" title="IREO Project" data-gallery="portfolio-gallery-skd" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sharma Kalypso Projects -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sharma">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="ITC Kohinoor 5-Star Hotel – Hyderabad">
+            <div class="portfolio-info">
+              <h4>ITC Kohinoor 5-Star Hotel – Hyderabad</h4>
+              <p>5-Star hospitality interiors</p>
+              <a href="assets/img/portfolio/books-3.jpg" title="ITC Kohinoor" data-gallery="portfolio-gallery-sharma" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sharma">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="Bangalore Metro Station – Architectural Finishes">
+            <div class="portfolio-info">
+              <h4>Bangalore Underground Metro Station</h4>
+              <p>Architectural finishes</p>
+              <a href="assets/img/portfolio/branding-1.jpg" title="Bangalore Metro" data-gallery="portfolio-gallery-sharma" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            </div>
+          </div>
+        </div>
+      `;
+      portfolioContainer.innerHTML += otherProjects;
+      
+      // Re-initialize Isotope
+      setTimeout(() => {
+        const iso = new Isotope('.isotope-container', {
+          itemSelector: '.isotope-item',
+          layoutMode: 'masonry'
+        });
+        
+        // Reinitialize GLightbox
+        if (typeof GLightbox !== 'undefined') {
+          GLightbox({ selector: '.glightbox' });
+        }
+      }, 100);
+      
+      // Handle portfolio filter links from dropdown
+      const portfolioFilterLinks = document.querySelectorAll('.portfolio-filter-link');
+      
+      portfolioFilterLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const filterValue = this.getAttribute('data-filter');
+          
+          // Update active state on filter buttons
+          const filterButtons = document.querySelectorAll('.portfolio-filters li');
+          filterButtons.forEach(button => {
+            button.classList.remove('filter-active');
+          });
+          
+          // Find and activate the matching filter button
+          filterButtons.forEach(button => {
+            if (button.getAttribute('data-filter') === filterValue) {
+              button.classList.add('filter-active');
+            }
+          });
+          
+          // Apply Isotope filter
+          const isotope = document.querySelector('.isotope-container');
+          if (isotope && typeof Isotope !== 'undefined') {
+            const iso = Isotope.data(isotope);
+            if (iso) {
+              iso.arrange({ filter: filterValue });
+            }
+          }
+          
+          // Smooth scroll to portfolio section
+          const portfolioSection = document.querySelector('#portfolio');
+          if (portfolioSection) {
+            setTimeout(() => {
+              portfolioSection.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 
