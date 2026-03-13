@@ -49,8 +49,98 @@
   .ellipsis-text {
   white-space: normal !important;   /* allows wrapping */
   word-break: break-word !important; /* breaks long words if needed */
-
 }
+
+  /* Portfolio Items Container */
+  #portfolio-items {
+    width: 100%;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    #portfolio-items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #portfolio-items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  #portfolio-items .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  #portfolio-items .portfolio-content {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+  }
+
+  #portfolio-items .portfolio-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  #portfolio-items .portfolio-item:hover .portfolio-content img {
+    transform: scale(1.1);
+  }
+
+  #portfolio-items .portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  #portfolio-items .portfolio-item:hover .portfolio-info {
+    transform: translateY(0);
+  }
+
+  #portfolio-items .portfolio-info h4 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  #portfolio-items .portfolio-info p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #ccc;
+  }
+
+  #portfolio-items .portfolio-info a {
+    display: inline-block;
+    margin: 10px 5px 0 5px;
+    color: white;
+    transition: color 0.3s;
+  }
+
+  #portfolio-items .portfolio-info a:hover {
+    color: #007bff;
+  }
 
   </style>
 </head>
@@ -447,171 +537,25 @@
       <!-- Portfolio Filters -->
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active">All Companies</li>
-        <li data-filter=".filter-spacetheory">SpaceTheory Solutions</li>
-        <li data-filter=".filter-woodkraft">Woodkraft India</li>
         <li data-filter=".filter-brigade">Brigade Enterprises</li>
-        <li data-filter=".filter-skd">SKD Interior</li>
-        <li data-filter=".filter-sharma">Sharma Kalypso</li>
+        <li data-filter=".filter-skd">SKD Interior PVT LTD</li>
+        <li data-filter=".filter-sharma">Sharma Kalypso PVT LTD</li>
+        <li data-filter=".filter-woodkraft">Woodkraft India PVT LTD</li>
+        <li data-filter=".filter-spacetheory">SpaceTheory Solutions PVT LTD</li>
       </ul><!-- End Portfolio Filters -->
 
-      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4" id="portfolio-items" style="width: 100%; margin-bottom: 100px;">
+        <!-- Portfolio items will be generated dynamically by JavaScript -->
+      </div>
 
-        <!-- Example Project -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\spacetheory\s1.jpeg" class="img-fluid" alt="SpaceTheory Workspace">
-            <div class="portfolio-info">
-              <h4>SpaceTheory Workspace – Indira Nagar</h4>
-              <p>Office interiors</p>
-              <a href="assets\img\spacetheory\s1.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-          </div>
-           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
-          <div class="portfolio-content h-100">
-            <img src='assets\img\spacetheory\s2.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
-            <div class="portfolio-info">
-              <h4>SpaceTheory Workspace – Indira Nagar</h4>
-              <p>Office interiors</p>
-              <a href="assets\img\spacetheory\s2.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-          </div>
-           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
-          <div class="portfolio-content h-100">
-            <img src='assets\img\spacetheory\s3.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
-            <div class="portfolio-info">
-              <h4>SpaceTheory Workspace – Indira Nagar</h4>
-              <p>Office interiors</p>
-              <a href="assets\img\spacetheory\s3.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-          </div>
-           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
-          <div class="portfolio-content h-100">
-            <img src='assets\img\spacetheory\s4.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
-            <div class="portfolio-info">
-              <h4>SpaceTheory Workspace – Indira Nagar</h4>
-              <p>Office interiors</p>
-              <a href="assets\img\spacetheory\s4.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-          </div>
-           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-spacetheory">
-          <div class="portfolio-content h-100">
-            <img src='assets\img\spacetheory\s5.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
-            <div class="portfolio-info">
-              <h4>SpaceTheory Workspace – Indira Nagar</h4>
-              <p>Office interiors</p>
-              <a href="assets\img\spacetheory\s5.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-          </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b1.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b1.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b2.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b2.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b3.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b3.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b4.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b4.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b5.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b5.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b6.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b6.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b7.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b7.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src="assets\img\brigade\b8.jpeg" class="img-fluid" alt="ITC Kohinoor Hotel">
-            <div class="portfolio-info">
-              <h4>ITC Kohinoor Hotel – Hyderabad</h4>
-              <p>5-Star hospitality interiors</p>
-              <a href="assets\img\brigade\b8.jpeg" title="ITC Kohinoor Hotel" data-gallery="portfolio-gallery-hospitality" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-brigade">
-          <div class="portfolio-content h-100">
-            <img src='assets\img\brigade\b9.jpeg' class="img-fluid" alt="SpaceTheory Workspace">
-            <div class="portfolio-info">
-              <h4>SpaceTheory Workspace – Indira Nagar</h4>
-              <p>Office interiors</p>
-              <a href="assets\img\brigade\b9.jpeg" title="SpaceTheory Workspace" data-gallery="portfolio-gallery-commercial" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-            </div>
-          </div>
-          </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-metro">
-          <div class="portfolio-content h-100">
-            <img src="assets/img/portfolio/bangalore-metro.jpg" class="img-fluid" alt="Bangalore Metro Station">
-            <div class="portfolio-info">
-              <h4>Bangalore Underground Metro Station</h4>
-              <p>Architectural finishes</p>
-              <a href="assets/img/portfolio/bangalore-metro.jpg" title="Bangalore Metro" data-gallery="portfolio-gallery-metro" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-      </div><!-- End isotope-container -->
+      <!-- Pagination Controls (hidden for infinite scroll) -->
+      <div id="pagination-container">
+        <nav aria-label="Portfolio pagination">
+          <ul class="pagination" id="pagination-controls" style="display: flex; list-style: none; gap: 5px; flex-wrap: wrap; justify-content: center;">
+            <!-- Pagination buttons will be generated by JavaScript -->
+          </ul>
+        </nav>
+      </div><!-- End Pagination Controls -->
 
     </div><!-- End isotope-layout -->
 
@@ -715,62 +659,7 @@
       </script>
       <div class="swiper-wrapper">
 
-        <!-- Testimonial 1 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>“Guddu consistently delivered projects ahead of schedule with premium quality finishes. His leadership at SpaceTheory ensured smooth execution across multiple sites.”</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/spacetheory-client.jpg" class="testimonial-img" alt="">
-            <h3>Client Representative</h3>
-            <h4>SpaceTheory Solutions Pvt Ltd</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <!-- Testimonial 2 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>“At Brigade Enterprises, Guddu managed complex interiors — from model flats to clubhouses — with zero major QA snags. His SAP workflow expertise kept billing and reconciliation audit-ready.”</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/brigade-client.jpg" class="testimonial-img" alt="">
-            <h3>Consultant</h3>
-            <h4>Brigade Enterprises Ltd</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <!-- Testimonial 3 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>“Guddu’s coordination on the ITC Kohinoor Hotel interiors was exceptional. His attention to detail in finishes and vendor management ensured a flawless handover.”</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/itc-client.jpg" class="testimonial-img" alt="">
-            <h3>Project Manager</h3>
-            <h4>ITC Ltd</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <!-- Testimonial 4 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>“His work on Bangalore Metro interiors demonstrated strong technical knowledge and planning. Guddu ensured compliance, safety, and timely delivery under challenging conditions.”</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/metro-client.jpg" class="testimonial-img" alt="">
-            <h3>PMC Consultant</h3>
-            <h4>BMRCL</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
+        
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -895,47 +784,159 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Portfolio Filter Script for Dropdown -->
+  <!-- Portfolio Filter Script with Infinite Scroll -->
   <script>
+    let allPortfolioItems = [];
+    let filteredItems = [];
+    let currentFilter = '*';
+    let itemsLoaded = 0;
+    const ITEMS_PER_LOAD = 6;
+    let isLoading = false;
+
+    const portfolioData = [
+      { id: 1, name: 'Brigade Enterprises', desc: 'Brigade interiors', img: 'B', count: 31, category: 'filter-brigade', imgPath: 'assets/img/Brigadegroup', gallery: 'portfolio-gallery-brigade' },
+      { id: 2, name: 'SKD Interior', desc: 'Mixed-use interiors', img: 'SKD', count: 9, category: 'filter-skd', imgPath: 'assets/img/SKDInterior', gallery: 'portfolio-gallery-skd' },
+      { id: 3, name: 'Sharma Kalypso', desc: 'Architectural finishes', img: 'SK', count: 15, category: 'filter-sharma', imgPath: 'assets/img/Sharma', gallery: 'portfolio-gallery-sharma' },
+      { id: 4, name: 'Woodkraft India', desc: 'Corporate interiors', img: 'WK', count: 17, category: 'filter-woodkraft', imgPath: 'assets/img/Woodkraft', gallery: 'portfolio-gallery-woodkraft' },
+      { id: 5, name: 'SpaceTheory Solutions', desc: 'Office interiors', img: 's', count: 49, category: 'filter-spacetheory', imgPath: 'assets/img/spacetheory', gallery: 'portfolio-gallery-spacetheory' }
+    ];
+
+    function buildAllPortfolioItems() {
+      allPortfolioItems = [];
+      
+      portfolioData.forEach(project => {
+        for (let i = 1; i <= project.count; i++) {
+          let itemName;
+          
+          if (project.img === 'WK') {
+            itemName = `WK${i}`;
+          } else if (project.img === 'SK') {
+            itemName = `SK${i}`;
+          } else if (project.img === 'SKD') {
+            itemName = `SKD${i}`;
+          } else if (project.img === 's') {
+            itemName = i <= 10 ? `s${i}` : `S${i}`;
+          } else {
+            itemName = `${project.img}${i}`;
+          }
+          
+          allPortfolioItems.push({
+            name: project.name,
+            desc: project.desc,
+            imgPath: project.imgPath,
+            itemName: itemName,
+            category: project.category,
+            gallery: project.gallery
+          });
+        }
+      });
+      
+      filteredItems = [...allPortfolioItems];
+    }
+
+    function loadMoreItems() {
+      if (isLoading) return;
+      isLoading = true;
+      
+      const container = document.getElementById('portfolio-items');
+      if (!container) return;
+      
+      const itemsToRender = currentFilter === '*' ? allPortfolioItems : filteredItems;
+      const startIndex = itemsLoaded;
+      const endIndex = Math.min(startIndex + ITEMS_PER_LOAD, itemsToRender.length);
+      const itemsToShow = itemsToRender.slice(startIndex, endIndex);
+      
+      itemsToShow.forEach(item => {
+        const itemHtml = `
+          <div class="portfolio-item isotope-item ${item.category}">
+            <div class="portfolio-content">
+              <img src="${item.imgPath}/${item.itemName}.jpeg" class="img-fluid" alt="${item.name}">
+              <div class="portfolio-info">
+                <h4>${item.name}</h4>
+                <p>${item.desc}</p>
+                <a href="${item.imgPath}/${item.itemName}.jpeg" title="${item.name}" data-gallery="${item.gallery}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>`;
+        container.innerHTML += itemHtml;
+      });
+      
+      itemsLoaded = endIndex;
+      
+      // Reinitialize GLightbox for new images
+      if (typeof GLightbox !== 'undefined') {
+        GLightbox({ selector: '.glightbox' });
+      }
+      
+      isLoading = false;
+    }
+
+    function resetAndLoadInitial() {
+      const container = document.getElementById('portfolio-items');
+      if (!container) return;
+      
+      container.innerHTML = '';
+      itemsLoaded = 0;
+      loadMoreItems();
+    }
+
+    function setupInfiniteScroll() {
+      window.addEventListener('scroll', () => {
+        const container = document.getElementById('portfolio-items');
+        if (!container) return;
+        
+        const itemsToRender = currentFilter === '*' ? allPortfolioItems : filteredItems;
+        const rect = container.getBoundingClientRect();
+        const isNearBottom = rect.bottom - window.innerHeight < 500;
+        
+        if (isNearBottom && itemsLoaded < itemsToRender.length) {
+          loadMoreItems();
+        }
+      });
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
+      buildAllPortfolioItems();
+      resetAndLoadInitial();
+      setupInfiniteScroll();
+      
+      // Handle portfolio filter buttons
+      const filterButtons = document.querySelectorAll('.portfolio-filters li');
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          let filterValue = this.getAttribute('data-filter');
+          currentFilter = filterValue === '*' ? '*' : filterValue.replace('.', '');
+          filteredItems = currentFilter === '*' ? allPortfolioItems : allPortfolioItems.filter(item => item.category === currentFilter);
+          
+          filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+          this.classList.add('filter-active');
+          
+          resetAndLoadInitial();
+        });
+      });
+      
       // Handle portfolio filter links from dropdown menu
       const portfolioFilterLinks = document.querySelectorAll('.portfolio-filter-link');
-      
       portfolioFilterLinks.forEach(link => {
         link.addEventListener('click', function(e) {
           e.preventDefault();
+          let filterValue = this.getAttribute('data-filter');
+          currentFilter = filterValue === '*' ? '*' : filterValue.replace('.', '');
+          filteredItems = currentFilter === '*' ? allPortfolioItems : allPortfolioItems.filter(item => item.category === currentFilter);
           
-          const filterValue = this.getAttribute('data-filter');
-          
-          // Update active state on filter buttons
-          const filterButtons = document.querySelectorAll('.portfolio-filters li');
           filterButtons.forEach(button => {
             button.classList.remove('filter-active');
-          });
-          
-          // Find and activate the matching filter button
-          filterButtons.forEach(button => {
-            if (button.getAttribute('data-filter') === filterValue) {
+            let buttonValue = button.getAttribute('data-filter') === '*' ? '*' : button.getAttribute('data-filter').replace('.', '');
+            if (buttonValue === currentFilter) {
               button.classList.add('filter-active');
             }
           });
           
-          // Apply Isotope filter
-          const isotope = document.querySelector('.isotope-container');
-          if (isotope && typeof Isotope !== 'undefined') {
-            const iso = Isotope.data(isotope);
-            if (iso) {
-              iso.arrange({ filter: filterValue });
-            }
-          }
-          
-          // Smooth scroll to portfolio section
-          const portfolioSection = document.querySelector('#portfolio');
-          if (portfolioSection) {
-            setTimeout(() => {
-              portfolioSection.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-          }
+          resetAndLoadInitial();
+          setTimeout(() => {
+            document.querySelector('#portfolio').scrollIntoView({ behavior: 'smooth' });
+          }, 100);
         });
       });
     });
